@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Georama:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@85.7,340&family=Roboto&family=Roboto+Slab:wght@100..900&display=swap');
+/* Landing Page Styles */
+body{
+     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+/* Full-screen Hero Section with Background Image */
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0;
+    z-index: 10; /* Make sure it stays on top of other content */
+}
+
+.slider {
+    display: flex;
+    white-space: nowrap;
+    animation: slide 30s linear infinite;
+}
+
+.slider span {
+    margin-right: 20px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#hero {
+     height: 100vh; /* Full viewport height */
+     background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/adult-male-advertising-editorial-futuristic-portrait-free-image.jpeg?w=2210&quality=70') no-repeat center center/cover; /* Background image */
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0 20px;
+     position: relative;
+ }
+ #hero::before {
+     content: ''; /* Required to create the pseudo-element */
+     position: absolute;
+     top: 5;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: inherit; /* Inherit the background image */
+     filter: blur(20px); /* Apply blur effect */
+     z-index: -1; /* Place the blur effect behind the content */
+ }
+ 
+ .hero-container {
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+ #hero h1 {
+     font-size: 8em;
+     font-weight: 700;
+          margin-bottom: 20px;
+     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ #hero p {
+     font-size: 2.2em;
+     font-weight: bold;
+
+     margin-bottom: 30px;
+     color: #ffffff;
+     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ #hero .btn {
+     padding: 12px 25px;
+     border-radius: 25px;
+     font-size: 1.1em;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition: all 0.3s ease;
+ }
+ 
+ #hero .btn-primary {
+     background: #00BFFF;
+     color: white;
+ }
+ 
+ #hero .btn-primary:hover {
+     background: #3e6573;
+ }
+/* Features Section Styling */
+#features {
+     background: #232323; /* Dark background */
+     color: #fff; /* White text for contrast */
+     padding: 30px 60px;
+    
+     text-align: center;
+     height: 100vh;
+ }
+ 
+ .features-container {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ #features h2 {
+     font-size: 2.5em;
+     color: #008FBF; /* Vibrant blue for the heading */
+     margin-bottom: 40px;
+     font-weight: bold;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ .features-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     gap: 30px;
+     margin-top: 30px;
+ }
+ 
+ .feature {
+     background: #008FBF; /* Blue background for the feature boxes */
+     color: white; /* White text for feature boxes */
+     border-radius: 4px;
+     padding: 45px;
+     margin: 15px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .feature:hover {
+     transform: translateY(-10px); /* Lift the feature card */
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .feature h3 {
+     font-size: 1.5em;
+     color: #fff; /* White color for feature titles */
+     margin-bottom: 15px;
+     font-weight: bold;
+ }
+ 
+ .feature p {
+     font-size: 1.1em;
+     color: #e0e0e0; /* Lighter color for the text */
+ }
+ 
+ /* Responsive Styles for smaller screens */
+ @media (max-width: 768px) {
+     #features h2 {
+         font-size: 2em;
+     }
+ 
+     .feature {
+         padding: 20px;
+     }
+ }
+/* CTA Section */
+#cta {
+     position: relative; /* Set position for the pseudo-element */
+     color: white;
+     padding: 60px 0;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     overflow: hidden; /* Ensure no content overflows */
+ }
+ 
+ #cta::before {
+     content: ""; /* Add an empty pseudo-element */
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/3d-polygon-abstract-background-free-photo.jpeg?w=2210&quality=70") no-repeat center center/cover;
+     filter: blur(5px); /* Apply blur effect */
+     z-index: -1; /* Send the pseudo-element to the background */
+ }
+ 
+ 
+ #cta h2 {
+     font-size: 2.5em;
+     font-weight: bold;
+     color: white;
+     margin-bottom: 30px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ #cta .btn {
+     padding: 12px 25px;
+     font-size: 1.1em;
+     text-decoration: none;
+     text-transform: uppercase;
+     border-radius: 25px;
+     margin: 10px 0;
+     display: inline-block;
+     transition: all 0.3s ease;
+ }
+ 
+ #cta .btn-primary {
+     background: #fffbfb; /* Blue primary button */
+     color: rgb(0, 0, 0);
+ }
+ 
+ #cta .btn-primary:hover {
+     background: #008CBA; /* Darker blue for hover effect */
+ }
+ 
+ #cta .btn-secondary {
+     background: #ffffff; /* Secondary button color */
+     color: rgb(0, 0, 0);
+ }
+ 
+ #cta .btn-secondary:hover {
+     background: #FF6F00; /* Darker shade of orange for hover effect */
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     #cta h2 {
+         font-size: 2em;
+     }
+ 
+     #cta .btn {
+         width: 90%; /* Make buttons take more space on smaller screens */
+         font-size: 1em;
+     }
+ }
+ 

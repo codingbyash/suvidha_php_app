@@ -1,0 +1,59 @@
+/* Footer Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Georama:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@85.7,340&family=Roboto&family=Roboto+Slab:wght@100..900&display=swap');
+/* Landing Page Styles */
+body{
+     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+#manasher-footer {
+     background: #1d1d1d; /* Dark background for consistency with navbar */
+     color: #ccc; /* Lighter text for a professional and clean look */
+     padding: 30px 0;
+     text-align: center;
+     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+ }
+ 
+ #footer-container {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ #footer-text {
+     font-size: 1em;
+     margin-bottom: 15px;
+     color: #ccc; /* Light grey for readability */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     letter-spacing: 0.5px; /* Subtle spacing for readability */
+ }
+ 
+ #footer-links {
+     list-style: none;
+     display: inline-flex;
+     gap: 25px;
+ }
+ 
+ #footer-links li a {
+     color: #ccc; /* Lighter color for links */
+     text-decoration: none;
+     font-size: 1em;
+     font-weight: 500;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     transition: color 0.3s ease;
+ }
+ 
+ #footer-links li a:hover {
+     color: #00BFFF; /* Professional blue accent on hover */
+     text-decoration: underline; /* Underline for better interaction feedback */
+ }
+ 
+ /* Responsive Footer */
+ @media (max-width: 768px) {
+     #footer-container {
+         width: 90%;
+     }
+ 
+     #footer-links {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }
+ 

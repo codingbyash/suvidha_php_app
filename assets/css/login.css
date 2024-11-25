@@ -1,0 +1,106 @@
+/* Register Page Styles */
+body{
+     height: 100vh;
+     background-color: #232323;
+
+}
+ /* Container for Registration Form */
+ .container {
+     width: 100%;
+     max-width: 480px;
+     padding: 40px 50px;
+     margin: 100px 550px;
+     background: linear-gradient(135deg, #00BFFF, #232323); /* Gradient background */
+     border-radius: 5px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+     color: white;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ /* Heading */
+ h2 {
+     font-size: 2.5em;
+     font-weight: 700;
+     color: #fff;
+     margin-bottom: 25px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ 
+ /* Input Fields */
+ input[type="text"],
+ input[type="password"] {
+     width: 95%;
+     padding: 14px;
+     margin: 10px 0;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     background: #333;
+     color: white;
+     font-size: 1.1em;
+     transition: border 0.3s ease;
+ }
+ 
+ /* Input focus effect */
+ input[type="text"]:focus,
+ input[type="password"]:focus {
+     outline: none;
+     border: 2px solid #00BFFF; /* Blue border on focus */
+ }
+ 
+ /* Register Button */
+ button {
+     width: 100%;
+     padding: 15px;
+     background: #00BFFF; /* Blue background */
+     color: white;
+     border: none;
+     font-size: 1.2em;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     margin-top: 20px;
+ }
+ 
+ /* Button hover effect */
+ button:hover {
+     background: #008CBA; /* Darker blue on hover */
+     transform: translateY(-3px);
+ }
+ 
+ /* Button active effect */
+ button:active {
+     background: #005F73; /* Even darker blue on click */
+     transform: translateY(0);
+ }
+ 
+ /* Label Styling */
+ label {
+     font-size: 1.1em;
+     color: white;
+     margin-bottom: 10px;
+     text-align: left;
+     display: block;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .container {
+         padding: 25px 20px;
+         width: 90%;
+     }
+ 
+     h2 {
+         font-size: 2em;
+     }
+ 
+     input[type="text"],
+     input[type="password"],
+     button {
+         font-size: 1em;
+     }
+ }
+ 

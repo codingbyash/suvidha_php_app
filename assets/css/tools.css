@@ -1,0 +1,138 @@
+/* Body Styling */
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #232323; /* Dark background for the page */
+     color: white;
+ }
+.head{
+     margin-bottom: 35px;
+     margin-top: 25px;
+     display: flex;
+
+}
+ 
+ .auth-btn {
+     background-color: #00BFFF;
+     color: white;
+     padding: 10px 20px;
+     text-decoration: none;
+     border-radius: 5px;
+     margin-left: 10px;
+     font-size: 1.1em;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .auth-btn:hover {
+     background-color: #008CBA;
+     transform: translateY(-3px); /* Small lift effect */
+ }
+ 
+ .auth-btn:active {
+     background-color: #005F73;
+     transform: translateY(0); /* Reset */
+ }
+ 
+ /* Main Container Styling */
+ .container {
+     max-width: 1500px;
+     margin: 50px auto; /* Centered on the page */
+     padding: 20px;
+     background-color: #2A2A2A; /* Slightly lighter shade than the page */
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+     text-align: center;
+ }
+ 
+ /* Heading and Paragraph Styling */
+ h1 {
+     font-size: 2.5em;
+     margin-bottom: 20px;
+     color: #00BFFF;
+     text-transform: uppercase;
+ }
+ 
+ p {
+     font-size: 1.2em;
+     margin-bottom: 30px;
+ }
+ 
+ /* Tools Grid Layout */
+ .tools-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     gap: 50px;
+ }
+ 
+ /* Individual Tool Card Styling */
+ .tool-card {
+     background-color: #333; /* Card background */
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .tool-card h2 {
+     font-size: 1.8em;
+     margin-bottom: 15px;
+     color: #00BFFF;
+     text-align: center;
+ }
+ 
+ .tool-card p {
+     font-size: 1em;
+     margin-bottom: 20px;
+ }
+ 
+ /* Button Styling */
+ .tool-btn {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 1.1em;
+     background-color: #00BFFF;
+     color: white;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background 0.3s ease, transform 0.2s ease;
+     text-align: center;
+     margin-top: 10px;
+ }
+ 
+ .tool-btn:hover {
+     background-color: #008CBA; /* Slightly darker blue */
+     transform: translateY(-3px); /* Small lift on hover */
+ }
+ 
+ .tool-btn:active {
+     background-color: #005F73; /* Even darker blue */
+     transform: translateY(0); /* Reset */
+ }
+ 
+ /* Hover Effect on Tool Cards */
+ .tool-card:hover {
+     transform: translateY(-5px); /* Lift effect */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .container {
+         width: 90%;
+         margin: 20px auto;
+     }
+ 
+     .tools-grid {
+         grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+     }
+ 
+     h1 {
+         font-size: 2em;
+     }
+ 
+     p {
+         font-size: 1.1em;
+     }
+ }
+ 

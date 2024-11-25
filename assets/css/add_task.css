@@ -1,0 +1,103 @@
+/* Body Styling */
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #232323; /* Dark background for the page */
+     color: white;
+ }
+ 
+ /* Main Container Styling */
+ .container {
+     max-width: 600px;
+     margin: 50px auto; /* Centered on the page */
+     padding: 20px;
+     background-color: #2A2A2A; /* Slightly lighter shade than the page */
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+     text-align: left;
+ }
+ 
+ /* Heading Styling */
+ .container h2 {
+     font-size: 2em;
+     margin-bottom: 20px;
+     color: #00BFFF;
+     text-align: center;
+     text-transform: uppercase;
+ }
+ 
+ /* Label Styling */
+ label {
+     display: block;
+     margin-bottom: 10px;
+     font-size: 1.1em;
+     color: #fff;
+ }
+ 
+ /* Input Fields */
+ input[type="text"],
+ textarea,
+ select {
+     width: 100%;
+     padding: 10px 15px;
+     margin-bottom: 20px;
+     border: 1px solid #555; /* Subtle border */
+     border-radius: 5px;
+     background-color: #333; /* Matches the dark theme */
+     color: white;
+     font-size: 1em;
+     box-sizing: border-box;
+     transition: border 0.3s ease;
+ }
+ 
+ /* Input Focus Effect */
+ input[type="text"]:focus,
+ textarea:focus,
+ select:focus {
+     outline: none;
+     border: 2px solid #00BFFF; /* Highlighted border on focus */
+ }
+ 
+ /* Textarea Specific Styling */
+ textarea {
+     resize: none; /* Disable resizing */
+     height: 100px;
+ }
+ 
+ /* Button Styling */
+ button {
+     width: 100%;
+     padding: 15px;
+     font-size: 1.2em;
+     background-color: #00BFFF;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background 0.3s ease, transform 0.2s ease;
+ }
+ 
+ /* Button Hover and Active States */
+ button:hover {
+     background-color: #008CBA; /* Slightly darker blue */
+     transform: translateY(-3px); /* Small lift on hover */
+ }
+ 
+ button:active {
+     background-color: #005F73; /* Even darker blue */
+     transform: translateY(0); /* Reset */
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .container {
+         width: 90%;
+         margin: 20px auto;
+     }
+ 
+     .container h2 {
+         font-size: 1.8em;
+     }
+ }
+ 

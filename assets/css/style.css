@@ -1,0 +1,163 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100..900;1,100..900&family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100..900&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #232323, #1a1a1a);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #232323;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1, h2 {
+    color: #00BFFF;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Links */
+a {
+    color: #00BFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #00a3cc;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #444;
+}
+
+th {
+    background: linear-gradient(to right, #00BFFF, #007a99);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: #2c2c2c;
+    font-size: 0.95rem;
+    color: #f5f5f5;
+}
+
+tr:nth-child(even) td {
+    background-color: #3a3a3a;
+}
+
+tr:hover td {
+    background-color: #444;
+}
+
+/* Form Elements */
+button, input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+button, select {
+    background: linear-gradient(to right, #00BFFF, #007a99);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(to right, #007a99, #005b73);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #00BFFF;
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button, input, textarea, select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

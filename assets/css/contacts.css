@@ -1,0 +1,116 @@
+/* Full Page Styling */
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #232323; /* Dark theme background */
+     color: white;
+ }
+ 
+ #contact {
+     width: 100%;
+     min-height: 100vh;
+     padding: 50px 20px;
+     text-align: center;
+     background: linear-gradient(135deg, #00BFFF, #232323); /* Gradient background */
+     color: white;
+ }
+ 
+ /* Heading and Paragraph */
+ #contact h1 {
+     font-size: 3em;
+     font-weight: bold;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     color: #fff;
+ }
+ 
+ #contact p {
+     font-size: 1.2em;
+     margin-bottom: 40px;
+     color: #f0f0f0;
+ }
+ 
+ /* Form Styling */
+ form {
+     width: 90%;
+     max-width: 600px;
+     margin: 0 auto;
+     text-align: left;
+ }
+ 
+ label {
+     display: block;
+     font-size: 1.1em;
+     margin-bottom: 10px;
+     color: #fff;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+     width: 100%;
+     padding: 12px 15px;
+     margin-bottom: 20px;
+     border: 1px solid #333;
+     border-radius: 5px;
+     background: #333;
+     color: white;
+     font-size: 1em;
+     transition: border 0.3s ease;
+ }
+ 
+ /* Input Focus Effect */
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ textarea:focus {
+     outline: none;
+     border: 2px solid #00BFFF; /* Highlight border on focus */
+ }
+ 
+ /* Textarea Styling */
+ textarea {
+     resize: none; /* Disable resizing */
+ }
+ 
+ /* Submit Button */
+ button {
+     width: 100%;
+     padding: 15px;
+     
+     background: #00BFFF;
+     border: none;
+     font-size: 1.2em;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background 0.3s ease, transform 0.3s ease;
+ }
+ 
+ /* Button Hover and Active Effects */
+ button:hover {
+     background: #008CBA; /* Darker blue */
+     transform: translateY(-3px); /* Slight lift */
+ }
+ 
+ button:active {
+     background: #005F73; /* Even darker blue */
+     transform: translateY(0);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     #contact h1 {
+         font-size: 2.5em;
+     }
+ 
+     #contact p {
+         font-size: 1em;
+     }
+ 
+     form {
+         width: 95%;
+     }
+ }
+ 
